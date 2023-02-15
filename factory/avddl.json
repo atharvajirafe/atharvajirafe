@@ -1,0 +1,9 @@
+{
+	"name": "avddl",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5d48e13a-4b88-4e7f-8cb4-298cd91206cc",
+		"tenantId": "8b178bc9-159c-4211-9747-f0ae84fa3369"
+	}
+}
