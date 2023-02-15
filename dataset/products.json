@@ -1,0 +1,68 @@
+{
+	"name": "products",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedlist",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "AdventureWorksProducts-210108-175401.csv",
+				"container": "avdpunedl"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ProductKey",
+				"type": "String"
+			},
+			{
+				"name": "ProductSubcategoryKey",
+				"type": "String"
+			},
+			{
+				"name": "ProductSKU",
+				"type": "String"
+			},
+			{
+				"name": "ProductName",
+				"type": "String"
+			},
+			{
+				"name": "ModelName",
+				"type": "String"
+			},
+			{
+				"name": "ProductDescription",
+				"type": "String"
+			},
+			{
+				"name": "ProductColor",
+				"type": "String"
+			},
+			{
+				"name": "ProductSize",
+				"type": "String"
+			},
+			{
+				"name": "ProductStyle",
+				"type": "String"
+			},
+			{
+				"name": "ProductCost",
+				"type": "String"
+			},
+			{
+				"name": "ProductPrice",
+				"type": "String"
+			}
+		]
+	}
+}
