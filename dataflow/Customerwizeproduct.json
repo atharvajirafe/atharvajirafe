@@ -17,6 +17,9 @@
 						"type": "DatasetReference"
 					},
 					"name": "sales"
+				},
+				{
+					"name": "source1"
 				}
 			],
 			"sinks": [
@@ -65,6 +68,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> sales",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> source1",
 				"customer, sales join(customer@CustomerKey == sales@CustomerKey,",
 				"     joinType:'left',",
 				"     matchType:'exact',",
