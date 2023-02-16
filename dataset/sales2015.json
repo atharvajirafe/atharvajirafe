@@ -5,6 +5,11 @@
 			"referenceName": "linkedlist",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"sales2015": {
+				"type": "array"
+			}
+		},
 		"folder": {
 			"name": "sales"
 		},
