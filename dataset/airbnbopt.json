@@ -1,0 +1,22 @@
+{
+	"name": "airbnbopt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedlist",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "opt",
+				"container": "public"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

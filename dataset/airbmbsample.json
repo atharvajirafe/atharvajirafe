@@ -1,0 +1,392 @@
+{
+	"name": "airbmbsample",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedlist",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "airbnb_amsterdam_sample_data.csv",
+				"container": "public"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "listing_url",
+				"type": "String"
+			},
+			{
+				"name": "scrape_id",
+				"type": "String"
+			},
+			{
+				"name": "last_scraped",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "summary",
+				"type": "String"
+			},
+			{
+				"name": "space",
+				"type": "String"
+			},
+			{
+				"name": "description",
+				"type": "String"
+			},
+			{
+				"name": "experiences_offered",
+				"type": "String"
+			},
+			{
+				"name": "neighborhood_overview",
+				"type": "String"
+			},
+			{
+				"name": "notes",
+				"type": "String"
+			},
+			{
+				"name": "transit",
+				"type": "String"
+			},
+			{
+				"name": "access",
+				"type": "String"
+			},
+			{
+				"name": "interaction",
+				"type": "String"
+			},
+			{
+				"name": "house_rules",
+				"type": "String"
+			},
+			{
+				"name": "picture_url",
+				"type": "String"
+			},
+			{
+				"name": "host_id",
+				"type": "String"
+			},
+			{
+				"name": "host_url",
+				"type": "String"
+			},
+			{
+				"name": "host_name",
+				"type": "String"
+			},
+			{
+				"name": "host_since",
+				"type": "String"
+			},
+			{
+				"name": "host_location",
+				"type": "String"
+			},
+			{
+				"name": "host_about",
+				"type": "String"
+			},
+			{
+				"name": "host_response_time",
+				"type": "String"
+			},
+			{
+				"name": "host_response_rate",
+				"type": "String"
+			},
+			{
+				"name": "host_acceptance_rate",
+				"type": "String"
+			},
+			{
+				"name": "host_is_superhost",
+				"type": "String"
+			},
+			{
+				"name": "host_thumbnail_url",
+				"type": "String"
+			},
+			{
+				"name": "host_picture_url",
+				"type": "String"
+			},
+			{
+				"name": "host_neighbourhood",
+				"type": "String"
+			},
+			{
+				"name": "host_listings_count",
+				"type": "String"
+			},
+			{
+				"name": "host_total_listings_count",
+				"type": "String"
+			},
+			{
+				"name": "host_verifications",
+				"type": "String"
+			},
+			{
+				"name": "host_has_profile_pic",
+				"type": "String"
+			},
+			{
+				"name": "host_identity_verified",
+				"type": "String"
+			},
+			{
+				"name": "street",
+				"type": "String"
+			},
+			{
+				"name": "neighbourhood",
+				"type": "String"
+			},
+			{
+				"name": "neighbourhood_cleansed",
+				"type": "String"
+			},
+			{
+				"name": "city",
+				"type": "String"
+			},
+			{
+				"name": "state",
+				"type": "String"
+			},
+			{
+				"name": "zipcode",
+				"type": "String"
+			},
+			{
+				"name": "market",
+				"type": "String"
+			},
+			{
+				"name": "smart_location",
+				"type": "String"
+			},
+			{
+				"name": "country_code",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "latitude",
+				"type": "String"
+			},
+			{
+				"name": "longitude",
+				"type": "String"
+			},
+			{
+				"name": "is_location_exact",
+				"type": "String"
+			},
+			{
+				"name": "property_type",
+				"type": "String"
+			},
+			{
+				"name": "room_type",
+				"type": "String"
+			},
+			{
+				"name": "accommodates",
+				"type": "String"
+			},
+			{
+				"name": "bathrooms",
+				"type": "String"
+			},
+			{
+				"name": "bedrooms",
+				"type": "String"
+			},
+			{
+				"name": "beds",
+				"type": "String"
+			},
+			{
+				"name": "bed_type",
+				"type": "String"
+			},
+			{
+				"name": "amenities",
+				"type": "String"
+			},
+			{
+				"name": "square_feet",
+				"type": "String"
+			},
+			{
+				"name": "price",
+				"type": "String"
+			},
+			{
+				"name": "weekly_price",
+				"type": "String"
+			},
+			{
+				"name": "monthly_price",
+				"type": "String"
+			},
+			{
+				"name": "security_deposit",
+				"type": "String"
+			},
+			{
+				"name": "cleaning_fee",
+				"type": "String"
+			},
+			{
+				"name": "guests_included",
+				"type": "String"
+			},
+			{
+				"name": "extra_people",
+				"type": "String"
+			},
+			{
+				"name": "minimum_nights",
+				"type": "String"
+			},
+			{
+				"name": "maximum_nights",
+				"type": "String"
+			},
+			{
+				"name": "calendar_updated",
+				"type": "String"
+			},
+			{
+				"name": "has_availability",
+				"type": "String"
+			},
+			{
+				"name": "availability_30",
+				"type": "String"
+			},
+			{
+				"name": "availability_60",
+				"type": "String"
+			},
+			{
+				"name": "availability_90",
+				"type": "String"
+			},
+			{
+				"name": "availability_365",
+				"type": "String"
+			},
+			{
+				"name": "calendar_last_scraped",
+				"type": "String"
+			},
+			{
+				"name": "number_of_reviews",
+				"type": "String"
+			},
+			{
+				"name": "first_review",
+				"type": "String"
+			},
+			{
+				"name": "last_review",
+				"type": "String"
+			},
+			{
+				"name": "review_scores_rating",
+				"type": "String"
+			},
+			{
+				"name": "review_scores_accuracy",
+				"type": "String"
+			},
+			{
+				"name": "review_scores_cleanliness",
+				"type": "String"
+			},
+			{
+				"name": "review_scores_checkin",
+				"type": "String"
+			},
+			{
+				"name": "review_scores_communication",
+				"type": "String"
+			},
+			{
+				"name": "review_scores_location",
+				"type": "String"
+			},
+			{
+				"name": "review_scores_value",
+				"type": "String"
+			},
+			{
+				"name": "requires_license",
+				"type": "String"
+			},
+			{
+				"name": "license",
+				"type": "String"
+			},
+			{
+				"name": "jurisdiction_names",
+				"type": "String"
+			},
+			{
+				"name": "instant_bookable",
+				"type": "String"
+			},
+			{
+				"name": "is_business_travel_ready",
+				"type": "String"
+			},
+			{
+				"name": "cancellation_policy",
+				"type": "String"
+			},
+			{
+				"name": "require_guest_profile_picture",
+				"type": "String"
+			},
+			{
+				"name": "require_guest_phone_verification",
+				"type": "String"
+			},
+			{
+				"name": "calculated_host_listings_count",
+				"type": "String"
+			},
+			{
+				"name": "reviews_per_month",
+				"type": "String"
+			}
+		]
+	}
+}
