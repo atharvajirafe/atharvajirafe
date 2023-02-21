@@ -1,0 +1,40 @@
+{
+	"name": "dataflow1_copy1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "employee",
+						"type": "DatasetReference"
+					},
+					"name": "empsource"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "derivedColumn1"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          id as string,",
+				"          first_name as string,",
+				"          last_name as string,",
+				"          email as string,",
+				"          gender as string,",
+				"          ip_address as string,",
+				"          department as string,",
+				"          income as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> empsource",
+				"empsource derive(mased_column = substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(id,'1','9'),'2','8'),'3','7'),'4','6'),'5','5'),'6','4'),'7','3'),'8','2'),'9','1'), 1, 4)\r",
+				") ~> derivedColumn1"
+			]
+		}
+	}
+}
