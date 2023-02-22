@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "custmapped",
+						"referenceName": "dgd",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"

@@ -1,0 +1,22 @@
+{
+	"name": "dgd",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedlist",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "dgdgd",
+				"container": "public"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

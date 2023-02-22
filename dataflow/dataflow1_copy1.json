@@ -12,7 +12,15 @@
 					"name": "empsource"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "dgd",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
 			"transformations": [
 				{
 					"name": "derivedColumn1"
@@ -32,8 +40,11 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> empsource",
-				"empsource derive(mased_column = substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(id,'1','9'),'2','8'),'3','7'),'4','6'),'5','5'),'6','4'),'7','3'),'8','2'),'9','1'), 1, 4)\r",
-				") ~> derivedColumn1"
+				"empsource derive(mased_column = substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(id,'1','9'),'2','8'),'3','7'),'4','6'),'5','5'),'6','4'),'7','3'),'8','2'),'9','1'), 1, 4)) ~> derivedColumn1",
+				"derivedColumn1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
 		}
 	}
